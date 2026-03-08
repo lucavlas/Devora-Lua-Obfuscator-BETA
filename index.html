@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Devora Code Obfuscator</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="title">
+        Devora<br>
+        <span>Code Obfuscator</span>
+    </div>
+    <div class="beta">Beta</div>
+</div>
+
+<div class="container">
+    <div class="column">
+        <label class="label">Input</label>
+        <textarea
+            id="input"
+            class="code-box"
+            placeholder="Enter code here..."
+        ></textarea>
+        <button class="obf-btn" onclick="obfuscate()">Obfuscate</button>
+    </div>
+
+    <div class="column">
+        <label class="label">Result</label>
+        <div class="output-wrapper">
+            <textarea
+                id="output"
+                class="code-box"
+                placeholder="Obfuscated code will appear here when ready :)"
+            ></textarea>
+            <button class="copy-btn" onclick="copyOutput()">Copy</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
